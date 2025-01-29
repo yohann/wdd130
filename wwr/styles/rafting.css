@@ -15,27 +15,35 @@ body {
   color: var(--accent2-color);
 }
 
+/* Header styles using CSS Grid */
 header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
   background-color: var(--primary-color);
   color: white;
   padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-header .logo {
+.logo {
   height: 50px;
 }
 
-header nav a {
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem;
   font-family: 'Bebas Neue', sans-serif;
 }
 
-header nav a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
@@ -72,26 +80,49 @@ header nav a:hover {
   color: white;
 }
 
-.hero .client-image {
+.client-image {
   float: right;
   max-width: 100px;
   margin-left: 1rem;
 }
 
-/* Section styles */
-section {
+/* History Section */
+.history {
   padding: 2rem;
+  text-align: center;
 }
 
-section h2 {
-  font-family: 'Bebas Neue', sans-serif;
+.history h2 {
   color: var(--primary-color);
-  margin-bottom: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-section img {
-  width: 100px;
-  margin: 0.5rem;
+/* Adventure Section */
+.adventure {
+  padding: 2rem;
+  text-align: center;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+  text-align: center;
+  width: 150px;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
 }
 
 /* Footer styles */
@@ -100,44 +131,20 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer img {
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-icons img {
   height: 30px;
-  margin: 0 0.5rem;
 }
 
-footer a {
-  text-decoration: none;
-}
-
-footer a img:hover {
+.social-icons a:hover img {
   filter: brightness(1.2);
 }
-
-/* Styles for the nav element */
-nav {
-  background-color: var(--primary-color);
-  padding: 10px;
-  text-align: center;
-}
-
-/* Styles for the nav anchor elements */
-nav a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Styles for the h1 element */
-h1 {
-  font-size: 2em;
-  color: var(--primary-color);
-  text-align: center;
-  margin-bottom: 20px;
-}
-
