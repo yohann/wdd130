@@ -110,7 +110,7 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-.adventure-gallery figure {
+.adventure-gallery figure, .home-samples {
   text-align: center;
   width: 150px;
 }
@@ -268,4 +268,167 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: var(--secondary-color);
+}
+
+/* Newsletter Signup Section */
+.newsletter-signup {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+}
+
+.newsletter-signup h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--primary-color);
+}
+
+.newsletter-signup .form-group {
+  margin-bottom: 1rem;
+}
+
+.newsletter-signup input[type="text"],
+.newsletter-signup input[type="email"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  border: 1px solid var(--accent2-color);
+  border-radius: 4px;
+}
+
+.newsletter-signup button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+}
+
+.newsletter-signup button[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Call to Action Section */
+.call-to-action {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.call-to-action .cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+}
+
+.call-to-action .cta-button:hover {
+  background-color: var(--accent1-color);
+}
+
+/* Site Purpose Section */
+.site-purpose {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.grid-item h3 {
+  margin-top: 0.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--primary-color);
+}
+
+/* Call to Action Section */
+.call-to-action {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.call-to-action .cta-link {
+  color: var(--accent1-color);
+  text-decoration: underline;
+}
+
+.call-to-action .cta-link:hover {
+  color: var(--primary-color);
+}
+
+/* Trip Descriptions Section */
+.trip-descriptions {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.trip-item {
+  text-align: center;
+}
+
+.trip-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.trip-item h3 {
+  margin-top: 0.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--primary-color);
+}
+
+/* Trip Table Section */
+.trip-table {
+  padding: 2rem;
+  text-align: center;
+}
+
+.trip-table table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+  border: 1px solid var(--accent2-color);
+  padding: 0.5rem;
+}
+
+.trip-table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.trip-table td {
+  background-color: #fff;
 }
